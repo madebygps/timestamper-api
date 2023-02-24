@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "serverless_timestamper": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7117",
+      "launchBrowser": false
+    }
+  }
+}
