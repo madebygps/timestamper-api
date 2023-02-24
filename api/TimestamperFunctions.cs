@@ -69,7 +69,7 @@ namespace timestamper.Function
                     }
                 }
                 string result = await generateTimestamp(words);
-                response.WriteString(result + "/n");
+                response.WriteString(result + "\n");
                 //writeTofile(result);
                 if (endIndex + captionsPerSlice < track.Captions.Count)
                 {
@@ -94,7 +94,7 @@ namespace timestamper.Function
                         }
                     }
                     string theresult = await generateTimestamp(words);
-                    response.WriteString(theresult+"/n");
+                    response.WriteString(theresult+"\n");
                     //writeTofile(theresult);
 
                 }

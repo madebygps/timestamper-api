@@ -1801,26 +1801,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gwynethp\\.nuget\\packages\\": {}
+    "/Users/gps/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gwynethp\\Developer\\serverless-timestamper\\client\\client.csproj",
+      "projectUniqueName": "/Users/gps/Developer/serverless-timestamper/client/client.csproj",
       "projectName": "client",
-      "projectPath": "C:\\Users\\gwynethp\\Developer\\serverless-timestamper\\client\\client.csproj",
-      "packagesPath": "C:\\Users\\gwynethp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gwynethp\\Developer\\serverless-timestamper\\client\\obj\\",
+      "projectPath": "/Users/gps/Developer/serverless-timestamper/client/client.csproj",
+      "packagesPath": "/Users/gps/.nuget/packages/",
+      "outputPath": "/Users/gps/Developer/serverless-timestamper/client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gwynethp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/gps/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1871,7 +1869,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
