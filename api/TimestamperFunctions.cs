@@ -129,7 +129,66 @@ namespace serverlesstimestamper.api
                 }
                 Console.WriteLine($"{completionResult.Error.Code}: {completionResult.Error.Message}");
             }
+
+            // call signalr hub to send message to client
             return summary;
         }
+
+        [Function("SendToSignalR")]
+        public async static Task<MyOutputType> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] MyInfo myTimer, FunctionContext context, string timeStamp)
+        {
+
+            MySignalRMessage mySignalRMessage;
+
+            var logger = context.GetLogger("SendToSignalR");
+            //logger.LogInformation($"C# Timer trigger function executed at: {myTimer.ScheduleStatus?.LastUpdated}");
+            logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+
+
+            mySignalRMessage = new MySignalRMessage()
+            {
+                Target = "timestamps",
+                Arguments = new object[] { timeStamp }
+            };
+            return new MyOutputType()
+            {
+                mySignalRMessage = mySignalRMessage,
+
+            };
+        }
+
+
     }
+
+
+
+
+    public class MyInfo
+    {
+        public MyScheduleStatus? ScheduleStatus { get; set; }
+    }
+
+    public class MyScheduleStatus
+    {
+        public DateTime Last { get; set; }
+
+        public DateTime Next { get; set; }
+
+        public DateTime LastUpdated { get; set; }
+    }
+    public class MyOutputType
+    {
+        [SignalROutput(HubName = "timestamps", ConnectionStringSetting = "AzureSignalRConnectionString")]
+        public MySignalRMessage? mySignalRMessage { get; set; }
+
+
+
+    }
+    public class MySignalRMessage
+    {
+        public string? Target { get; set; }
+
+        public object? Arguments { get; set; }
+    }
+
 }
