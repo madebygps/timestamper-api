@@ -1,0 +1,43 @@
+{
+  "masterKey": {
+    "name": "master",
+    "value": "CRlqLG-8ctsVqWPnpDhRyRlj6ajnV8zHB2K9cPhjBcUQAzFu5_kevQ==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "Owq-ttqd8v_j6SXXR2ERDXj2hNJFnQMHNp4k6u0bw6e4AzFuG_v6vQ==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [],
+  "hostName": "localhost:7071",
+  "instanceId": "000000000000000000000000000B75C3",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}{
+  "masterKey": {
+    "name": "master",
+    "value": "CRlqLG-8ctsVqWPnpDhRyRlj6ajnV8zHB2K9cPhjBcUQAzFu5_kevQ==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "Owq-ttqd8v_j6SXXR2ERDXj2hNJFnQMHNp4k6u0bw6e4AzFuG_v6vQ==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [
+    {
+      "name": "durabletask_extension",
+      "value": "K2O5aiKtMwad2oIXUORPRvGLwsAnwegxFkVXL7CLgFmYAzFuvs3nYQ==",
+      "encrypted": false
+    }
+  ],
+  "hostName": "localhost:7071",
+  "instanceId": "000000000000000000000000000B75C3",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}{}{"TaskHubName":"TestHubName","CreatedAt":"2023-02-25T23:07:59.2195684Z","PartitionCount":4}{"PartitionId":"testhubname-control-02","Owner":null,"Token":null,"Epoch":0}{"OwnerId":"811c9dc5-0000-0000-0000-000000000000","DesiredSwapId":null}{"PartitionId":"testhubname-control-00","Owner":"BLD","Token":"5416f146-9a46-43a0-87c8-2967527e1c84","Epoch":1}{"PartitionId":"testhubname-control-01","Owner":"BLD","Token":"f0b32f19-f626-4419-b648-d5992de38350","Epoch":1}{"PartitionId":"testhubname-control-02","Owner":"BLD","Token":"98bc7d54-928c-4c9c-86f6-2e277572a074","Epoch":1}{"PartitionId":"testhubname-control-03","Owner":"BLD","Token":"8bdba3a3-fd80-4fad-b22b-8965fa352542","Epoch":1}{"PartitionId":"testhubname-control-00","Owner":"BLD","Token":"be3b5ccf-97f9-4332-8f25-11eaf40b38e9","Epoch":1}{"PartitionId":"testhubname-control-01","Owner":"BLD","Token":"cb610bd4-ca2c-4c7a-b3b4-ffe2bdb5ec19","Epoch":1}{"PartitionId":"testhubname-control-02","Owner":"BLD","Token":"e30223a0-46fb-4a7f-806c-374d9cb45110","Epoch":1}{"PartitionId":"testhubname-control-03","Owner":"BLD","Token":"b59e6e70-b2cc-42dc-9089-28502eba226a","Epoch":1}{"PartitionId":"testhubname-control-02","Owner":null,"Token":null,"Epoch":1}{"PartitionId":"testhubname-control-02","Owner":null,"Token":null,"Epoch":1}{}{"PartitionId":"testhubname-control-03","Owner":null,"Token":null,"Epoch":0}{"PartitionId":"testhubname-control-00","Owner":"BLD","Token":"0c8055d5-00cc-48e3-a7e7-4158440d3697","Epoch":2}{"PartitionId":"testhubname-control-01","Owner":"BLD","Token":"914e35a3-9683-46bb-906a-1ab76721634b","Epoch":2}{"PartitionId":"testhubname-control-02","Owner":"BLD","Token":"4ca91914-e331-4cfc-ab2d-0d6d30af1bf1","Epoch":2}{"PartitionId":"testhubname-control-03","Owner":"BLD","Token":"6658b9ac-7607-475d-a7fa-00c04a594267","Epoch":2}{"PartitionId":"testhubname-control-00","Owner":"BLD","Token":"db21906b-62aa-483a-8831-28637ee4f844","Epoch":2}{"PartitionId":"testhubname-control-01","Owner":"BLD","Token":"5c92e4b0-bdb0-41da-b288-f6b2afd7582e","Epoch":2}{"PartitionId":"testhubname-control-02","Owner":"BLD","Token":"f253f203-72b3-411d-82ea-9d5858cfd659","Epoch":2}{"PartitionId":"testhubname-control-03","Owner":"BLD","Token":"32e19650-2219-4b97-afe5-7c8e86bbc47f","Epoch":2}{"PartitionId":"testhubname-control-03","Owner":null,"Token":null,"Epoch":2}{"PartitionId":"testhubname-control-03","Owner":null,"Token":null,"Epoch":2}{}{"PartitionId":"testhubname-control-00","Owner":null,"Token":null,"Epoch":0}{"PartitionId":"testhubname-control-00","Owner":"BLD","Token":"3cfd0f4a-d369-4104-8c3b-35504e7beb51","Epoch":3}{"PartitionId":"testhubname-control-01","Owner":"BLD","Token":"fbdba42d-9b57-46e2-bc4b-c20ed0e01e8d","Epoch":3}{"PartitionId":"testhubname-control-02","Owner":"BLD","Token":"68f35810-a6cb-42b3-9f7d-eae3cbf43555","Epoch":3}{"PartitionId":"testhubname-control-03","Owner":"BLD","Token":"539ff998-9112-429a-ab68-7b7a98cb0535","Epoch":3}{"PartitionId":"testhubname-control-00","Owner":"BLD","Token":"ebf73026-63a9-4d6f-bf5a-6a339518af94","Epoch":3}{"PartitionId":"testhubname-control-01","Owner":"BLD","Token":"eb28f75f-83b7-4ceb-b173-dcba008e1e7e","Epoch":3}{"PartitionId":"testhubname-control-02","Owner":"BLD","Token":"b70c9d3a-c843-4519-82a7-376f2f0d5148","Epoch":3}{"PartitionId":"testhubname-control-03","Owner":"BLD","Token":"137c1ff8-4d8e-4a55-8d14-ce04d546cb94","Epoch":3}{"PartitionId":"testhubname-control-00","Owner":null,"Token":null,"Epoch":3}{"PartitionId":"testhubname-control-00","Owner":null,"Token":null,"Epoch":3}
