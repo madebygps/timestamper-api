@@ -15,15 +15,14 @@ namespace serverlesstimestamper.api
     {
         private readonly ILogger _logger;
 
-        
-
         public TimestamperFunctions(ILoggerFactory loggerFactory)
         {
             _logger = loggerFactory.CreateLogger<TimestamperFunctions>();
         }
 
         [Function("TimestamperFunctions")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req, string videoUrl)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")]
+        HttpRequestData req, string videoUrl)
         {
 
             List<Timestamp> timestamps = new List<Timestamp>();
@@ -33,10 +32,6 @@ namespace serverlesstimestamper.api
             response.Headers.Add("Content-Type", "application/json; charset=utf-8");
 
             var youtube = new YoutubeClient();
-
-            //var video = await youtube.Videos.GetAsync(videoUrl);
-
-            //using StreamWriter file = new("WriteLines.txt", append: true);
 
             var trackManifest = await youtube.Videos.ClosedCaptions.GetManifestAsync(
                 videoUrl
@@ -56,33 +51,30 @@ namespace serverlesstimestamper.api
 
             int startIndex = 0;
             int endIndex = captionsPerSlice;
+            string words = "";
 
             for (int l = 0; l < slices; l++)
             {
                 var caption = track.Captions[startIndex];
-                //await file.WriteLineAsync($"TIMESTAMP: {caption.Offset}");
-                //response.WriteString($"TIMESTAMP: {caption.Offset}");
                 Timestamp newTimestamp = new Timestamp(
                     time: caption.Offset.ToString(),
                     summary: ""
                 );
-                string words = "";
+
+                words = "";
 
                 for (int k = startIndex; k < endIndex; k++)
                 {
                     caption = track.Captions[k];
                     if (!string.IsNullOrWhiteSpace(caption.Text))
                     {
-                        words += $"{caption.Text} ";
+                        words += $"{caption.Text}";
                     }
                 }
                 string result = await generateTimestamp(words);
                 newTimestamp.summary = result;
-
                 timestamps.Add(newTimestamp);
 
-                //response.WriteString(result + "\n");
-                //writeTofile(result);
                 if (endIndex + captionsPerSlice < track.Captions.Count)
                 {
                     startIndex = startIndex + captionsPerSlice;
@@ -91,39 +83,11 @@ namespace serverlesstimestamper.api
                 else
                 {
                     startIndex = endIndex;
-                    words = "";
-                    //await file.WriteLineAsync($"TIMESTAMP: {caption.Offset}");
-                    //response.WriteString($"TIMESTAMP: {caption.Offset}");
-                    newTimestamp = new Timestamp(
-                    time: caption.Offset.ToString(),
-                    summary: ""
-                );
-
-                    for (var m = endIndex; m < track.Captions.Count; m++)
-                    {
-                        caption = track.Captions[m];
-
-                        // Check if the last caption is not empty
-                        if (!string.IsNullOrWhiteSpace(caption.Text))
-                        {
-                            words += $"{caption.Text} ";
-                        }
-                    }
-                    string theresult = await generateTimestamp(words);
-                    //response.WriteString(theresult + "\n");
-                    //writeTofile(theresult);
-                     newTimestamp.summary = theresult;
-
-                timestamps.Add(newTimestamp);
-
                 }
-
-                
-
             }
-            string json = JsonSerializer.Serialize(timestamps);
 
-                response.WriteString(json);
+            string json = JsonSerializer.Serialize(timestamps);
+            response.WriteString(json);
             return response;
         }
 
@@ -151,14 +115,11 @@ namespace serverlesstimestamper.api
             if (completionResult.Successful)
             {
                 summary = completionResult.Choices.FirstOrDefault().ToString().Remove(0, 25);
-                // remove last 25 characters 
                 int index = summary.IndexOf("Index =");
                 if (index >= 0)
                 {
                     summary = summary.Substring(0, index);
                 }
-                //Console.WriteLine(summary);
-                // await file.WriteLineAsync(summary);
             }
             else
             {
@@ -169,12 +130,6 @@ namespace serverlesstimestamper.api
                 Console.WriteLine($"{completionResult.Error.Code}: {completionResult.Error.Message}");
             }
             return summary;
-
         }
-
-
     }
 }
-
-
-// How can you get frontend to show each time stamp as it's provided?

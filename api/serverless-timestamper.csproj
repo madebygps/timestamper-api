@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
     <OutputType>Exe</OutputType>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -9,12 +9,14 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Betalgo.OpenAI.GPT3" Version="6.6.7" />
+    <PackageReference Include="Contrib.Grpc.Core.M1" Version="2.41.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.10.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.DurableTask" Version="1.0.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.7.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.9.2" />
     <PackageReference Include="YoutubeExplode" Version="6.2.6" />
+    <PackageReference Include="Grpc" Version="2.41.0" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

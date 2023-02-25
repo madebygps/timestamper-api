@@ -1,0 +1,43 @@
+{
+  "masterKey": {
+    "name": "master",
+    "value": "nmY3Hfa_Uet9gDNOCNTGE57Zx7HTdsH24paxgAsdAEVeAzFus-J80Q==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "hxF23Cc88kBBN0mJwE-UXa8Cv4yWoUfWBWhp3hg_VFJiAzFuoewCWg==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [],
+  "hostName": "localhost:7071",
+  "instanceId": "0000000000000000000000009E836FC4",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}{
+  "masterKey": {
+    "name": "master",
+    "value": "nmY3Hfa_Uet9gDNOCNTGE57Zx7HTdsH24paxgAsdAEVeAzFus-J80Q==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "hxF23Cc88kBBN0mJwE-UXa8Cv4yWoUfWBWhp3hg_VFJiAzFuoewCWg==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [
+    {
+      "name": "durabletask_extension",
+      "value": "r-KtcEzWgmCW6OA4tcvvEk3JoRmQS7bA3GbuD86gL9O4AzFu00q28Q==",
+      "encrypted": false
+    }
+  ],
+  "hostName": "localhost:7071",
+  "instanceId": "0000000000000000000000009E836FC4",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}
