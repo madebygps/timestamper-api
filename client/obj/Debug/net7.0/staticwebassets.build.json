@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mSh3LnQufGUDomWmxn0kPPmdVxBE7Fl4rUvXVI5+pwo=",
+  "Hash": "tfEJWh5fPXLinv6Yh5/CY74e2gzA436VJqTUG3fkzFY=",
   "Source": "client",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,74 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.css"
+    },
+    {
+      "Identity": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.css.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.css.gz"
+    },
+    {
+      "Identity": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.js"
+    },
+    {
+      "Identity": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.js.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/mudblazor/6.0.13/staticwebassets/MudBlazor.min.js.gz"
+    },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json",
       "SourceId": "client",
@@ -48,7 +116,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.webassembly/7.0.3/build/net7.0/blazor.webassembly.js"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.webassembly/6.0.7/build/net6.0/blazor.webassembly.js"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/client.dll",
@@ -218,7 +286,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.authorization/7.0.3/lib/net7.0/Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.authorization/6.0.7/lib/net6.0/Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.dll",
@@ -235,7 +303,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components/7.0.3/lib/net7.0/Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components/6.0.7/lib/net6.0/Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll",
@@ -252,7 +320,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.forms/7.0.3/lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.forms/6.0.7/lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll",
@@ -269,7 +337,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.web/7.0.3/lib/net7.0/Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.web/6.0.7/lib/net6.0/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -286,7 +354,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.webassembly/7.0.3/lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.components.webassembly/6.0.7/lib/net6.0/Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll",
@@ -303,7 +371,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.metadata/7.0.3/lib/net7.0/Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.aspnetcore.metadata/6.0.7/lib/net6.0/Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.CSharp.dll",
@@ -337,7 +405,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.dll",
@@ -354,7 +422,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.binder/7.0.3/lib/net7.0/Microsoft.Extensions.Configuration.Binder.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.binder/6.0.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.dll",
@@ -371,7 +439,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration/7.0.0/lib/net7.0/Microsoft.Extensions.Configuration.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration/6.0.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll",
@@ -388,7 +456,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.fileextensions/7.0.0/lib/net7.0/Microsoft.Extensions.Configuration.FileExtensions.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.fileextensions/6.0.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll",
@@ -405,7 +473,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.json/7.0.0/lib/net7.0/Microsoft.Extensions.Configuration.Json.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.configuration.json/6.0.0/lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
@@ -422,7 +490,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll",
@@ -439,7 +507,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/lib/net7.0/Microsoft.Extensions.DependencyInjection.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.dependencyinjection/6.0.0/lib/net6.0/Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll",
@@ -456,7 +524,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.fileproviders.abstractions/7.0.0/lib/net7.0/Microsoft.Extensions.FileProviders.Abstractions.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.fileproviders.abstractions/6.0.0/lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Physical.dll",
@@ -473,7 +541,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.fileproviders.physical/7.0.0/lib/net7.0/Microsoft.Extensions.FileProviders.Physical.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.fileproviders.physical/6.0.0/lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileSystemGlobbing.dll",
@@ -490,7 +558,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.filesystemglobbing/7.0.0/lib/net7.0/Microsoft.Extensions.FileSystemGlobbing.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.filesystemglobbing/6.0.0/lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll",
@@ -507,7 +575,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.1/lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.dll",
@@ -524,7 +592,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.logging/7.0.0/lib/net7.0/Microsoft.Extensions.Logging.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.logging/6.0.0/lib/netstandard2.1/Microsoft.Extensions.Logging.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Options.dll",
@@ -541,7 +609,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.options/7.0.1/lib/net7.0/Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.options/6.0.0/lib/netstandard2.1/Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Primitives.dll",
@@ -558,7 +626,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.primitives/7.0.0/lib/net7.0/Microsoft.Extensions.Primitives.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.extensions.primitives/6.0.0/lib/net6.0/Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.dll",
@@ -575,7 +643,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.jsinterop/7.0.3/lib/net7.0/Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.jsinterop/6.0.7/lib/net6.0/Microsoft.JSInterop.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll",
@@ -592,7 +660,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.jsinterop.webassembly/7.0.3/lib/net7.0/Microsoft.JSInterop.WebAssembly.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.jsinterop.webassembly/6.0.7/lib/net6.0/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.VisualBasic.Core.dll",
@@ -680,6 +748,23 @@
       "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/7.0.3/runtimes/browser-wasm/lib/net7.0/mscorlib.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/MudBlazor.dll",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/mudblazor/6.0.13/lib/net6.0/MudBlazor.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/netstandard.dll",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -695,6 +780,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/7.0.3/runtimes/browser-wasm/lib/net7.0/netstandard.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/shared.dll",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/shared.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/shared/bin/Debug/net7/shared.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/shared.pdb",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/shared.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/shared/bin/Debug/net7/shared.pdb"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.AppContext.dll",
@@ -1561,7 +1680,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/.nuget/packages/system.io.pipelines/7.0.0/lib/net7.0/System.IO.Pipelines.dll"
+      "OriginalItemSpec": "/Users/gps/.nuget/packages/system.io.pipelines/6.0.3/lib/net6.0/System.IO.Pipelines.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.IO.Pipes.AccessControl.dll",
@@ -3468,6 +3587,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.ComponentModel.TypeConverter.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/+DmHrxv8.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/shared.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/shared.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/shared.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/+GJBScgf.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -3483,23 +3619,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Formats.Asn1.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/+mxi7exB.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/+rNsbiB+.gz",
@@ -3585,23 +3704,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Net.WebSockets.Client.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/0vkx5gga.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Primitives.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/11wBWtiE.gz",
@@ -3961,7 +4063,7 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Core.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/8egT4svt.gz",
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/87iholo7.gz",
       "SourceId": "client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
@@ -4046,21 +4148,21 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Text.Json.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/8v0lwR6o.gz",
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/8ZlSH15f.gz",
       "SourceId": "client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Configuration.dll.gz",
+      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.dll",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.dll"
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/9asijIqQ.gz",
@@ -4097,6 +4199,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Xml.XPath.XDocument.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/9GtN2R91.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/9Mq2x6Vg.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -4131,6 +4250,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Diagnostics.FileVersionInfo.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/alRJqzTE.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/aSc9eLq2.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -4146,23 +4282,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Xml.XDocument.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/b00qhzLB.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/B0YWWreE.gz",
@@ -4233,6 +4352,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Globalization.Calendars.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/BjOfBZOn.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/BQUplLJ1.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -4282,6 +4418,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Drawing.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/C9hsxGP1.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/CbhucWpR.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/CBJ5rfi9.gz",
@@ -4386,6 +4556,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Security.Claims.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/cmzb14sf.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/shared.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/shared.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/shared.pdb"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/cP+y9g1J.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -4454,6 +4641,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Collections.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/DAUgfcas.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/ddje0wGu.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -4520,23 +4724,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Net.WebHeaderCollection.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/DvwatHdb.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/e0Rd7VO4.gz",
@@ -4641,55 +4828,21 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.IO.Compression.Brotli.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/Eo5iJPDe.gz",
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/F2vQbMks.gz",
       "SourceId": "client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Json.dll.gz",
+      "RelativePath": "_framework/Microsoft.Extensions.FileProviders.Abstractions.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/eTWOzCHo.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/ewJo4kCe.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.FileProviders.Physical.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Physical.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Physical.dll"
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/F5vVrYyN.gz",
@@ -4709,23 +4862,6 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Transactions.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/F8TZJogW.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll"
-    },
-    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/FC6VoHgq.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -4741,23 +4877,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Text.Encodings.Web.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/FD+F8qkk.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.FileProviders.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/FEBi3Ktv.gz",
@@ -4998,23 +5117,6 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.IO.MemoryMappedFiles.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/hGNbtXC3.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.dll"
-    },
-    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/HKXdgUkQ.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -5066,38 +5168,21 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Diagnostics.TextWriterTraceListener.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/IITVc5iy.gz",
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/IB8oU+AC.gz",
       "SourceId": "client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Binder.dll.gz",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.dll",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/irX7Jya5.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.IO.Pipelines.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.IO.Pipelines.dll"
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/j5W+AFva.gz",
@@ -5236,6 +5321,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Net.NameResolution.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/k95LWJsK.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Binder.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/kCHLy2m8.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -5353,23 +5455,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/WindowsBase.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/KmN4TOY8.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/KrCXM6Qh.gz",
@@ -5508,21 +5593,21 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Reflection.Primitives.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/lt8pWELo.gz",
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/ll5FRqSq.gz",
       "SourceId": "client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "RelativePath": "_framework/Microsoft.Extensions.FileSystemGlobbing.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Options.dll",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileSystemGlobbing.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileSystemGlobbing.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/lTNctmKZ.gz",
@@ -5695,6 +5780,40 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Linq.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/mVswVdRg.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/mX+78QKM.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/MudBlazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/MudBlazor.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/N1THQHuw.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -5744,23 +5863,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Xml.XPath.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/ncJKjyJA.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Configuration.FileExtensions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/nDHpgwG1.gz",
@@ -5933,23 +6035,6 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Data.Common.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/OZTV+pnF.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll"
-    },
-    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/p+b6v02+.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -6001,6 +6086,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.ComponentModel.Annotations.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/PkzRmDwP.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Primitives.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Primitives.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/pQxTmdVP.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -6016,6 +6118,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Net.Sockets.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/pSCoDvA6.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Configuration.FileExtensions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/pviIP3fS.gz",
@@ -6050,6 +6169,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Runtime.Extensions.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/q0M0RicU.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.IO.Pipelines.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.IO.Pipelines.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/RbWX8ede.gz",
@@ -6171,6 +6307,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Threading.Tasks.Extensions.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/SSDR8eO1.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Options.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Options.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/sTR3OO3+.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -6220,6 +6373,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Formats.Tar.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/tEDZeAm3.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/TGr+Y+Tl.gz",
@@ -6290,21 +6460,21 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Security.Cryptography.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/u4VOUiUw.gz",
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/U9YDvYXt.gz",
       "SourceId": "client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll"
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/uDIgHbCG.gz",
@@ -6339,40 +6509,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.ServiceProcess.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/UucUGEo5.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/UyqTj8mp.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.FileSystemGlobbing.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileSystemGlobbing.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileSystemGlobbing.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/v22a0yHH.gz",
@@ -6458,6 +6594,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Security.SecureString.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/VYZ7IkDc.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.FileProviders.Physical.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Physical.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.FileProviders.Physical.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/W45zBHVS.gz",
@@ -6562,21 +6715,21 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Resources.Reader.dll"
     },
     {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/WvyQOjOa.gz",
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/wrePHmlo.gz",
       "SourceId": "client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll"
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/XaeZ5s8E.gz",
@@ -6594,23 +6747,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.ServiceModel.Web.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/XJ1WP+zr.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/Y6aG+CSB.gz",
@@ -6645,6 +6781,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Security.Cryptography.Primitives.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/YbU+2sto.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Configuration.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/yiFDcLoj.gz",
@@ -6715,6 +6868,23 @@
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Security.Cryptography.Cng.dll"
     },
     {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/Z1m9lZK3.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.dll"
+    },
+    {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/z6dBLjpV.gz",
       "SourceId": "client",
       "SourceType": "Computed",
@@ -6747,6 +6917,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Reflection.DispatchProxy.dll"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/ZFj+QT6+.gz",
+      "SourceId": "client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/ZoA6qBm+.gz",
@@ -6798,23 +6985,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/System.Runtime.Serialization.Formatters.dll"
-    },
-    {
-      "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/zSPE1yDU.gz",
-      "SourceId": "client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/gps/Developer/serverless-timestamper/client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/Zsqr1MDH.gz",
@@ -7104,6 +7274,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
+    },
+    {
+      "Identity": "/Users/gps/Developer/serverless-timestamper/client/wwwroot/favicon.ico",
+      "SourceId": "client",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gps/Developer/serverless-timestamper/client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
       "Identity": "/Users/gps/Developer/serverless-timestamper/client/wwwroot/favicon.png",

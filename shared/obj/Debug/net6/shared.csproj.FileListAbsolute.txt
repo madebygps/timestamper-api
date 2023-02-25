@@ -1,0 +1,15 @@
+/Users/gps/Developer/serverless-timestamper/shared/bin/Debug/net6/shared.deps.json
+/Users/gps/Developer/serverless-timestamper/shared/bin/Debug/net6/shared.dll
+/Users/gps/Developer/serverless-timestamper/shared/bin/Debug/net6/shared.pdb
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/shared.csproj.AssemblyReference.cache
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/shared.AssemblyInfoInputs.cache
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/shared.AssemblyInfo.cs
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/shared.csproj.CoreCompileInputs.cache
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/shared.dll
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/refint/shared.dll
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/shared.pdb
+/Users/gps/Developer/serverless-timestamper/shared/obj/Debug/net6/ref/shared.dll
+/Users/gps/Developer/serverless-timestamper/api/bin/output/shared.deps.json
+/Users/gps/Developer/serverless-timestamper/api/bin/output/shared.dll
+/Users/gps/Developer/serverless-timestamper/api/bin/output/shared.pdb

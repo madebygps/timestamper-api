@@ -1,28 +1,78 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
+@using serverlesstimestamper.shared
 
-<PageTitle>Timestamps</PageTitle>
+<PageTitle>Timestamp Generator</PageTitle>
 
-<h1>Timestamps</h1>
+<MudText Typo="Typo.h3" GutterBottom="true">Timestamp Generator.</MudText>
+<MudText Class="mb-8">Provide your YouTube video URL</MudText>
 
-<p>This component demonstrates fetching data from the server.</p>
+<MudTextField @bind-Value="VideoURL" Label="Video URL" Variant="Variant.Text"></MudTextField>
 
-@if (captions == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <a> @captions</a>
-}
+
+<MudButton Disabled="@_processing" OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary">
+    @if (_processing)
+    {
+        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+        <MudText Class="ms-2">Processing</MudText>
+    }
+    else
+    {
+        <MudText>Click me</MudText>
+    }
+</MudButton>
+
+
+
+
+    <MudTable Items="timestamps" Hover="true" SortLabel="Sort By" Elevation="0">
+    <HeaderContent>
+        <MudTh>
+            Time
+        </MudTh>
+        <MudTh>
+            Caption
+        </MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Time">@context.time</MudTd>
+        <MudTd DataLabel="Summary">@context.summary</MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager PageSizeOptions="new int[]{50, 100}" />
+    </PagerContent>
+</MudTable>
+
+
 
 @code {
 
 
-private string captions = "";
+
+    private bool _processing = false;
+
+    async Task ProcessSomething()
+    {
+        _processing = true;
+        await Task.Delay(2000);
+        _processing = false;
+    }
+
+
+    public string VideoURL { get; set; }
+
+
+    private Timestamp[]? timestamps;
     protected override async Task OnInitializedAsync()
     {
         //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
-            captions = await Http.GetStringAsync("http://localhost:7071/api/TimestamperFunctions");
     }
+
+    // a function that will call api and return json
+    public async Task<Timestamp[]> GetTimestamps()
+    {
+     timestamps = await Http.GetFromJsonAsync<Timestamp[]>($"http://localhost:7071/api/TimestamperFunctions?videoUrl={VideoURL}");
+        return timestamps;
+    }
+    
 }

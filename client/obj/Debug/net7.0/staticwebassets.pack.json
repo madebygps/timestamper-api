@@ -5,7 +5,7 @@
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
     },
     {
-      "Id": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/eTWOzCHo.gz",
+      "Id": "/Users/gps/Developer/serverless-timestamper/client/obj/Debug/net7.0/build-gz/DAUgfcas.gz",
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
     },
     {
@@ -59,6 +59,10 @@
     {
       "Id": "/Users/gps/Developer/serverless-timestamper/client/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Id": "/Users/gps/Developer/serverless-timestamper/client/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
     },
     {
       "Id": "/Users/gps/Developer/serverless-timestamper/client/wwwroot/favicon.png",

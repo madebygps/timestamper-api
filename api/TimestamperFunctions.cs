@@ -6,14 +6,16 @@ using OpenAI.GPT3.Managers;
 using OpenAI.GPT3.ObjectModels;
 using OpenAI.GPT3.ObjectModels.RequestModels;
 using YoutubeExplode;
+using serverlesstimestamper.shared;
+using System.Text.Json;
 
-namespace timestamper.Function
+namespace serverlesstimestamper.api
 {
     public class TimestamperFunctions
     {
         private readonly ILogger _logger;
 
-        string youtubeUrl = "https://www.youtube.com/watch?v=LgWRbXw9dRU";
+        
 
         public TimestamperFunctions(ILoggerFactory loggerFactory)
         {
@@ -21,21 +23,23 @@ namespace timestamper.Function
         }
 
         [Function("TimestamperFunctions")]
-        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req)
+        public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req, string videoUrl)
         {
+
+            List<Timestamp> timestamps = new List<Timestamp>();
             _logger.LogInformation("C# HTTP trigger function processed a request.");
 
             var response = req.CreateResponse(HttpStatusCode.OK);
-            response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
+            response.Headers.Add("Content-Type", "application/json; charset=utf-8");
 
             var youtube = new YoutubeClient();
 
-            var video = await youtube.Videos.GetAsync(youtubeUrl);
+            //var video = await youtube.Videos.GetAsync(videoUrl);
 
             //using StreamWriter file = new("WriteLines.txt", append: true);
 
             var trackManifest = await youtube.Videos.ClosedCaptions.GetManifestAsync(
-                youtubeUrl
+                videoUrl
             );
 
             // Find closed caption track in English
@@ -57,7 +61,11 @@ namespace timestamper.Function
             {
                 var caption = track.Captions[startIndex];
                 //await file.WriteLineAsync($"TIMESTAMP: {caption.Offset}");
-                response.WriteString($"TIMESTAMP: {caption.Offset}");
+                //response.WriteString($"TIMESTAMP: {caption.Offset}");
+                Timestamp newTimestamp = new Timestamp(
+                    time: caption.Offset.ToString(),
+                    summary: ""
+                );
                 string words = "";
 
                 for (int k = startIndex; k < endIndex; k++)
@@ -69,7 +77,11 @@ namespace timestamper.Function
                     }
                 }
                 string result = await generateTimestamp(words);
-                response.WriteString(result + "\n");
+                newTimestamp.summary = result;
+
+                timestamps.Add(newTimestamp);
+
+                //response.WriteString(result + "\n");
                 //writeTofile(result);
                 if (endIndex + captionsPerSlice < track.Captions.Count)
                 {
@@ -81,7 +93,11 @@ namespace timestamper.Function
                     startIndex = endIndex;
                     words = "";
                     //await file.WriteLineAsync($"TIMESTAMP: {caption.Offset}");
-                    response.WriteString($"TIMESTAMP: {caption.Offset}");
+                    //response.WriteString($"TIMESTAMP: {caption.Offset}");
+                    newTimestamp = new Timestamp(
+                    time: caption.Offset.ToString(),
+                    summary: ""
+                );
 
                     for (var m = endIndex; m < track.Captions.Count; m++)
                     {
@@ -94,13 +110,20 @@ namespace timestamper.Function
                         }
                     }
                     string theresult = await generateTimestamp(words);
-                    response.WriteString(theresult+"\n");
+                    //response.WriteString(theresult + "\n");
                     //writeTofile(theresult);
+                     newTimestamp.summary = theresult;
+
+                timestamps.Add(newTimestamp);
 
                 }
 
+                
 
             }
+            string json = JsonSerializer.Serialize(timestamps);
+
+                response.WriteString(json);
             return response;
         }
 
@@ -152,3 +175,6 @@ namespace timestamper.Function
 
     }
 }
+
+
+// How can you get frontend to show each time stamp as it's provided?

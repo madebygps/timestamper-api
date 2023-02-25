@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6</TargetFramework>
+    <RootNamespace>serverlesstimestamper.shared</RootNamespace>
+	<LangVersion>11.0</LangVersion>
+  </PropertyGroup>
+
+</Project>
