@@ -19,7 +19,7 @@ namespace serverlesstimestamper.api
 
         [Function(nameof(TimestamperOrchestration))]
         public static async Task<List<string>> RunOrchestrator(
-            [OrchestrationTrigger] TaskOrchestrationContext context)
+            [OrchestrationTrigger] TaskOrchestrationContext context, string videoUrl)
         {
             ILogger logger = context.CreateReplaySafeLogger(nameof(TimestamperOrchestration));
             //logger.LogInformation("Saying hello.");
@@ -28,7 +28,7 @@ namespace serverlesstimestamper.api
             var outputs = new List<string>();
 
             // Replace name and input with values relevant for your Durable Functions Activity
-            outputs.Add(await context.CallActivityAsync<string>(nameof(SayHello), "Tokyo"));
+            outputs.Add(await context.CallActivityAsync<string>(nameof(GenerateJsonTimestamps), videoUrl));
 
 
             // returns ["Hello Tokyo!", "Hello Seattle!", "Hello London!"]
