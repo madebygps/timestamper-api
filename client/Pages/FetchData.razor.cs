@@ -1,5 +1,3 @@
-using System.Net.Http.Json;
-using serverlesstimestamper.shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.SignalR.Client;
 

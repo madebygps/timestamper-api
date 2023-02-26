@@ -77,11 +77,9 @@ namespace serverlesstimestamper.api
                 timestamps.Add(newTimestamp);
 
                 var client = new HttpClient();
-            var signalRresponse = await client.PostAsync($"http://localhost:7071/api/BroadcastToAll?videoUrl={newTimestamp.time + ": " + result}", new StringContent(result, Encoding.UTF8, "application/json"));
-    
-    _logger.LogInformation($"Response: {signalRresponse.StatusCode}");
+                var responseFromSignalR = await client.PostAsync($"http://localhost:7071/api/BroadcastToAll?videoUrl={newTimestamp.time + ": " + result}", new StringContent(result, Encoding.UTF8, "application/json"));
 
-
+                _logger.LogInformation($"Response: {responseFromSignalR.StatusCode}");
 
 
 
@@ -129,7 +127,7 @@ namespace serverlesstimestamper.api
                 if (index >= 0)
                 {
                     summary = summary.Substring(0, index);
-                    
+
                 }
             }
             else
@@ -147,7 +145,7 @@ namespace serverlesstimestamper.api
 
             //http://localhost:7071/api/SendToSignalR
             // make api get call to url
-            
+
             //http://localhost:7071/api/BroadcastToAll
             return summary;
         }
