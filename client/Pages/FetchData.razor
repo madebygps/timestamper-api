@@ -1,6 +1,9 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
 @using serverlesstimestamper.shared
+@using Microsoft.AspNetCore.SignalR.Client;
+@inject NavigationManager NavigationManager
+@inherits FetchDataBase
 
 <PageTitle>Timestamp Generator</PageTitle>
 
@@ -10,69 +13,34 @@
 <MudTextField @bind-Value="VideoURL" Label="Video URL" Variant="Variant.Text"></MudTextField>
 
 
-<MudButton Disabled="@_processing" OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary">
-    @if (_processing)
-    {
-        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
-        <MudText Class="ms-2">Processing</MudText>
-    }
-    else
-    {
-        <MudText>Click me</MudText>
-    }
+<MudButton Tex OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary"> <MudText>Click me</MudText>
+
+
+    
+
 </MudButton>
 
+<MudText Align="Align.Center">SignalR status: <MudText Align="Align.Center"
+            Color="@(hubConnection.State.ToString() is "Connected" ? MudBlazor.Color.Success : MudBlazor.Color.Error)">
+            @hubConnection.State</MudText>
+    </MudText>
 
 
-
-    <MudTable Items="timestamps" Hover="true" SortLabel="Sort By" Elevation="0">
-    <HeaderContent>
-        <MudTh>
-            Time
-        </MudTh>
-        <MudTh>
-            Caption
-        </MudTh>
-    </HeaderContent>
-    <RowTemplate>
-        <MudTd DataLabel="Time">@context.time</MudTd>
-        <MudTd DataLabel="Summary">@context.summary</MudTd>
-    </RowTemplate>
-    <PagerContent>
-        <MudTablePager PageSizeOptions="new int[]{50, 100}" />
-    </PagerContent>
-</MudTable>
-
+<ul id="messagesList">
+    @foreach (var message in timestamps)
+    {
+        <li>@message</li>
+    }
+</ul>
 
 
 @code {
-
-
-
-    private bool _processing = false;
-
-    async Task ProcessSomething()
-    {
-        _processing = true;
-        await Task.Delay(2000);
-        _processing = false;
-    }
-
-
     public string VideoURL { get; set; }
 
-
-    private Timestamp[]? timestamps;
-    protected override async Task OnInitializedAsync()
-    {
-        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
-    }
-
     // a function that will call api and return json
-    public async Task<Timestamp[]> GetTimestamps()
+    public async void GetTimestamps()
     {
-     timestamps = await Http.GetFromJsonAsync<Timestamp[]>($"http://localhost:7071/api/TimestamperFunctions?videoUrl={VideoURL}");
-        return timestamps;
+         await Http.GetAsync($"http://localhost:7071/api/TimestamperFunctions?videoUrl={VideoURL}");
+        //StateHasChanged();
     }
-    
 }
