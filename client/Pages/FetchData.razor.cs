@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.SignalR.Client;
+using serverlesstimestamper.shared;
 
 namespace serverlesstimestamper.client
 {
     public class FetchDataBase : ComponentBase
     {
-        protected List<string> timestamps = new List<string>();
+        protected List<Timestamp> timestamps = new List<Timestamp>();
         [Inject]
         public HttpClient Http { get; set; }
         protected HubConnection hubConnection;
@@ -26,7 +27,7 @@ namespace serverlesstimestamper.client
             // http://localhost:7071/api/negotiate
             //const connection = new signalR.HubConnectionBuilder()
 
-            hubConnection.On<string>("newMessage", (message) =>
+            hubConnection.On<Timestamp>("newMessage", (message) =>
                 {
                     //timestamps = timestamp;
                     // messagesList.Items.Add(newMessage);

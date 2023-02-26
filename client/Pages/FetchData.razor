@@ -5,27 +5,85 @@
 
 <PageTitle>Timestamp Generator</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Timestamp Generator.</MudText>
-<MudText Class="mb-8">Provide your YouTube video URL</MudText>
+<MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
 
-<MudTextField @bind-Value="VideoURL" Label="Video URL" Variant="Variant.Text"></MudTextField>
+            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;">
+                <MudText Align="Align.Center" Typo="Typo.h4" GutterBottom="true">Timestamp Generator</MudText>
+                <MudText Align="Align.Center">
+                    <MudText Align="Align.Center"
+                        Color="@(hubConnection.State.ToString() is "Connected" ? MudBlazor.Color.Success : MudBlazor.Color.Error)">
+                        @hubConnection.State</MudText>
+                </MudText>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="4">
+            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;">
+                <MudText Class="mb-8">Provide your YouTube video URL</MudText>
 
-<MudButton Tex OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary">
-    <MudText>Click me</MudText>
-</MudButton>
+                <MudTextField @bind-Value="VideoURL" Label="Video URL" Variant="Variant.Text"></MudTextField>
 
-<MudText Align="Align.Center">SignalR status: <MudText Align="Align.Center"
-        Color="@(hubConnection.State.ToString() is "Connected" ? MudBlazor.Color.Success : MudBlazor.Color.Error)">
-        @hubConnection.State</MudText>
-</MudText>
+                <MudButton Tex OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary">
+                    <MudText>Click me</MudText>
+                </MudButton>
+            </MudPaper>
+        </MudItem>
+
+        <MudItem xs="12" sm="6">
+            <MudPaper Elevation="0" Class="pa-4" Style="height: 100%">
+
+                <MudSimpleTable Hover="true" Dense="true" FixedHeader="true" Style="@(true?"height:300px;":"")">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var timestamp in timestamps)
+                        {
+                            <tr>
+
+                                <td>@timestamp.time.Split('.')[0]</td>
+                                <td>@timestamp.summary</td>
+                            </tr>
+                        }
+                    </tbody>
+                </MudSimpleTable>
 
 
-<ul id="messagesList">
-    @foreach (var message in timestamps)
-    {
-        <li>@message</li>
-    }
-</ul>
+            </MudPaper>
+        </MudItem>
+
+    </MudGrid>
+</MudContainer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @code {
     public string VideoURL { get; set; }
