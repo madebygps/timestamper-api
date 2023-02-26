@@ -8,6 +8,7 @@ using OpenAI.GPT3.ObjectModels.RequestModels;
 using YoutubeExplode;
 using serverlesstimestamper.shared;
 using System.Text.Json;
+using System.Text;
 
 namespace serverlesstimestamper.api
 {
@@ -75,6 +76,15 @@ namespace serverlesstimestamper.api
                 newTimestamp.summary = result;
                 timestamps.Add(newTimestamp);
 
+                var client = new HttpClient();
+            var signalRresponse = await client.PostAsync($"http://localhost:7071/api/BroadcastToAll?videoUrl={newTimestamp.time + ": " + result}", new StringContent(result, Encoding.UTF8, "application/json"));
+    
+    _logger.LogInformation($"Response: {signalRresponse.StatusCode}");
+
+
+
+
+
                 if (endIndex + captionsPerSlice < track.Captions.Count)
                 {
                     startIndex = startIndex + captionsPerSlice;
@@ -119,6 +129,7 @@ namespace serverlesstimestamper.api
                 if (index >= 0)
                 {
                     summary = summary.Substring(0, index);
+                    
                 }
             }
             else
@@ -131,64 +142,33 @@ namespace serverlesstimestamper.api
             }
 
             // call signalr hub to send message to client
+            // call SendToSignalR function
+            //var myInfo = new MyInfo()
+
+            //http://localhost:7071/api/SendToSignalR
+            // make api get call to url
+            
+            //http://localhost:7071/api/BroadcastToAll
             return summary;
         }
 
-        [Function("SendToSignalR")]
-        public async static Task<MyOutputType> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] MyInfo myTimer, FunctionContext context, string timeStamp)
+
+
+
+        [Function("BroadcastToAll")]
+        [SignalROutput(HubName = "timestamper", ConnectionStringSetting = "AzureSignalRConnectionString")]
+        public static SignalRMessageAction BroadcastToAll([HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req, string videoUrl)
         {
-
-            MySignalRMessage mySignalRMessage;
-
-            var logger = context.GetLogger("SendToSignalR");
-            //logger.LogInformation($"C# Timer trigger function executed at: {myTimer.ScheduleStatus?.LastUpdated}");
-            logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
-
-
-            mySignalRMessage = new MySignalRMessage()
+            //using var bodyReader = new StreamReader(req.Body);
+            return new SignalRMessageAction("newMessage")
             {
-                Target = "timestamps",
-                Arguments = new object[] { timeStamp }
-            };
-            return new MyOutputType()
-            {
-                mySignalRMessage = mySignalRMessage,
-
+                // broadcast to all the connected clients without specifying any connection, user or group.
+                Arguments = new[] { videoUrl }
             };
         }
 
 
     }
 
-
-
-
-    public class MyInfo
-    {
-        public MyScheduleStatus? ScheduleStatus { get; set; }
-    }
-
-    public class MyScheduleStatus
-    {
-        public DateTime Last { get; set; }
-
-        public DateTime Next { get; set; }
-
-        public DateTime LastUpdated { get; set; }
-    }
-    public class MyOutputType
-    {
-        [SignalROutput(HubName = "timestamps", ConnectionStringSetting = "AzureSignalRConnectionString")]
-        public MySignalRMessage? mySignalRMessage { get; set; }
-
-
-
-    }
-    public class MySignalRMessage
-    {
-        public string? Target { get; set; }
-
-        public object? Arguments { get; set; }
-    }
 
 }
