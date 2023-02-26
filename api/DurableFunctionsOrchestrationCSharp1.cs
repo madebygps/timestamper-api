@@ -19,10 +19,10 @@ namespace serverlesstimestamper.api
             [OrchestrationTrigger] TaskOrchestrationContext context, string videoUrl)
         {
             ILogger logger = context.CreateReplaySafeLogger(nameof(DurableFunctionsOrchestrationCSharp1));
-   
+
 
             List<Timestamp> timestamps = new List<Timestamp>();
-     
+
             var track = await context.CallActivityAsync<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack>(nameof(GetYouTubeVideoTrack), videoUrl);
             int slices = 20;
 
@@ -57,7 +57,7 @@ namespace serverlesstimestamper.api
                 }
 
                 // call new function from orchestrator
-                logger.LogInformation($"Calling generatre summary now");
+                logger.LogInformation($"Calling generate summary now");
                 string result = await context.CallActivityAsync<string>(nameof(GenerateSummary), words);
                 newTimestamp.summary = result;
                 timestamps.Add(newTimestamp);
@@ -65,7 +65,7 @@ namespace serverlesstimestamper.api
                 logger.LogInformation($"Calling signalr now");
                 //var responseFromSignalR = await client.PostAsync($"http://localhost:7071/api/BroadcastToAll?videoUrl={newTimestamp.time + ": " + result}", new StringContent(result, Encoding.UTF8, "application/json"));
 
-                var responseFromSignalR = await context.CallActivityAsync<HttpResponseMessage>(nameof(BroadcastToClients), newTimestamp.time + ": " + result);
+                var responseFromSignalR = await context.CallActivityAsync<HttpResponseMessage>(nameof(BroadcastToClients), newTimestamp);
                 logger.LogInformation($"Response: {responseFromSignalR.StatusCode}");
 
                 if (endIndex + captionsPerSlice < track.Captions.Count)
@@ -151,7 +151,7 @@ namespace serverlesstimestamper.api
 
         }
 
-        
+
 
         [Function(nameof(GetYouTubeVideoTrack))]
         public async static Task<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack> GetYouTubeVideoTrack([ActivityTrigger] string videoUrl)
@@ -171,7 +171,7 @@ namespace serverlesstimestamper.api
 
         [Function("BroadcastToClients")]
         [SignalROutput(HubName = "timestamper", ConnectionStringSetting = "AzureSignalRConnectionString")]
-        public static SignalRMessageAction BroadcastToClients([ActivityTrigger] string message)
+        public static SignalRMessageAction BroadcastToClients([ActivityTrigger] Timestamp message)
         {
             //using var bodyReader = new StreamReader(req.Body);
             return new SignalRMessageAction("newMessage")

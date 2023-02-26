@@ -1,7 +1,5 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
-@using serverlesstimestamper.shared
-@using Microsoft.AspNetCore.SignalR.Client;
 @inject NavigationManager NavigationManager
 @inherits FetchDataBase
 
@@ -12,18 +10,14 @@
 
 <MudTextField @bind-Value="VideoURL" Label="Video URL" Variant="Variant.Text"></MudTextField>
 
-
-<MudButton Tex OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary"> <MudText>Click me</MudText>
-
-
-    
-
+<MudButton Tex OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary">
+    <MudText>Click me</MudText>
 </MudButton>
 
 <MudText Align="Align.Center">SignalR status: <MudText Align="Align.Center"
-            Color="@(hubConnection.State.ToString() is "Connected" ? MudBlazor.Color.Success : MudBlazor.Color.Error)">
-            @hubConnection.State</MudText>
-    </MudText>
+        Color="@(hubConnection.State.ToString() is "Connected" ? MudBlazor.Color.Success : MudBlazor.Color.Error)">
+        @hubConnection.State</MudText>
+</MudText>
 
 
 <ul id="messagesList">
@@ -33,14 +27,15 @@
     }
 </ul>
 
-
 @code {
     public string VideoURL { get; set; }
 
     // a function that will call api and return json
     public async void GetTimestamps()
     {
-         await Http.GetAsync($"http://localhost:7071/api/TimestamperFunctions?videoUrl={VideoURL}");
+        await
+        Http.GetAsync($"https://timestamper.azurewebsites.net/api/DurableFunctionsOrchestrationCSharp1_HttpStart?videoUrl={VideoURL}");
+        // call orchestrator
         //StateHasChanged();
     }
 }
