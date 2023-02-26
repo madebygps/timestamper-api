@@ -19,19 +19,11 @@ namespace serverlesstimestamper.api
             [OrchestrationTrigger] TaskOrchestrationContext context, string videoUrl)
         {
             ILogger logger = context.CreateReplaySafeLogger(nameof(DurableFunctionsOrchestrationCSharp1));
-            logger.LogInformation("Saying hello.");
+   
+
             List<Timestamp> timestamps = new List<Timestamp>();
-            var youtube = new YoutubeClient();
-
-            var trackManifest = await youtube.Videos.ClosedCaptions.GetManifestAsync(
-                videoUrl
-            );
-
-
-            // Find closed caption track in English
-            var trackInfo = trackManifest.GetByLanguage("en");
-            var track = await youtube.Videos.ClosedCaptions.GetAsync(trackInfo);
-
+     
+            var track = await context.CallActivityAsync<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack>(nameof(GetYouTubeVideoTrack), videoUrl);
             int slices = 20;
 
             int captionsPerSlice = track.Captions.Count / slices;
@@ -60,18 +52,20 @@ namespace serverlesstimestamper.api
                     if (!string.IsNullOrWhiteSpace(caption.Text))
                     {
                         words += $"{caption.Text}";
+                        logger.LogInformation($"Caption: {caption.Text}");
                     }
                 }
 
                 // call new function from orchestrator
+                logger.LogInformation($"Calling generatre summary now");
                 string result = await context.CallActivityAsync<string>(nameof(GenerateSummary), words);
                 newTimestamp.summary = result;
                 timestamps.Add(newTimestamp);
 
-                var client = new HttpClient();
+                logger.LogInformation($"Calling signalr now");
                 //var responseFromSignalR = await client.PostAsync($"http://localhost:7071/api/BroadcastToAll?videoUrl={newTimestamp.time + ": " + result}", new StringContent(result, Encoding.UTF8, "application/json"));
 
-                var responseFromSignalR = await context.CallActivityAsync<HttpResponseMessage>(nameof(BroadcastToAll), newTimestamp.time + ": " + result);
+                var responseFromSignalR = await context.CallActivityAsync<HttpResponseMessage>(nameof(BroadcastToClients), newTimestamp.time + ": " + result);
                 logger.LogInformation($"Response: {responseFromSignalR.StatusCode}");
 
                 if (endIndex + captionsPerSlice < track.Captions.Count)
@@ -92,7 +86,7 @@ namespace serverlesstimestamper.api
 
             // Replace name and input with values relevant for your Durable Functions Activity
 
-            outputs.Add(await context.CallActivityAsync<string>(nameof(SayHello), "London"));
+            //outputs.Add(await context.CallActivityAsync<string>(nameof(SayHello), "London"));
 
             // returns ["Hello Tokyo!", "Hello Seattle!", "Hello London!"]
             return outputs;
@@ -100,8 +94,11 @@ namespace serverlesstimestamper.api
 
 
         [Function("GenerateSummary")]
-        public async static Task<string> GenerateSummary([ActivityTrigger] string text, FunctionContext executionContext, int slices, int startIndex, int endIndex)
+        public async static Task<string> GenerateSummary([ActivityTrigger] string text, FunctionContext executionContext)
         {
+
+            var logger = executionContext.GetLogger("GenerateSummary");
+            logger.LogInformation("Generating summary for {text}.", text);
             var openAiService = new OpenAIService(new OpenAI.GPT3.OpenAiOptions()
             {
                 ApiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY")
@@ -154,17 +151,27 @@ namespace serverlesstimestamper.api
 
         }
 
-        [Function(nameof(SayHello))]
-        public static string SayHello([ActivityTrigger] string name, FunctionContext executionContext)
+        
+
+        [Function(nameof(GetYouTubeVideoTrack))]
+        public async static Task<YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack> GetYouTubeVideoTrack([ActivityTrigger] string videoUrl)
         {
-            ILogger logger = executionContext.GetLogger("SayHello");
-            logger.LogInformation("Saying hello to {name}.", name);
-            return $"Hello {name}!";
+            var youtube = new YoutubeClient();
+
+            var trackManifest = await youtube.Videos.ClosedCaptions.GetManifestAsync(
+                videoUrl
+            );
+
+
+            var trackInfo = trackManifest.GetByLanguage("en");
+            var track = await youtube.Videos.ClosedCaptions.GetAsync(trackInfo);
+
+            return track;
         }
 
-        [Function("BroadcastToAll")]
+        [Function("BroadcastToClients")]
         [SignalROutput(HubName = "timestamper", ConnectionStringSetting = "AzureSignalRConnectionString")]
-        public static SignalRMessageAction BroadcastToAll([ActivityTrigger] string message)
+        public static SignalRMessageAction BroadcastToClients([ActivityTrigger] string message)
         {
             //using var bodyReader = new StreamReader(req.Body);
             return new SignalRMessageAction("newMessage")
@@ -177,7 +184,7 @@ namespace serverlesstimestamper.api
 
         [Function("DurableFunctionsOrchestrationCSharp1_HttpStart")]
         public static async Task<HttpResponseData> HttpStart(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req, string videoUrl,
             [DurableClient] DurableTaskClient client,
             FunctionContext executionContext)
         {
@@ -185,7 +192,7 @@ namespace serverlesstimestamper.api
 
             // Function input comes from the request content.
             string instanceId = await client.ScheduleNewOrchestrationInstanceAsync(
-                nameof(DurableFunctionsOrchestrationCSharp1));
+                nameof(DurableFunctionsOrchestrationCSharp1), videoUrl);
 
             logger.LogInformation("Started orchestration with ID = '{instanceId}'.", instanceId);
 
