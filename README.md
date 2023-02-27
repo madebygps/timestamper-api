@@ -40,7 +40,8 @@
 ### How to run the client
 
 1. Make sure API is running. 
-2. In the `client` folder run `dotnet run`
+2. In Pages > `FetchData.razor.cs` make sure `hubConnection = new HubConnectionBuilder().WithUrl("http://localhost:7071/api").Build();` is set to the port your API is running on.
+3. In the `client` folder run `dotnet run`
 
 ## How it works
 
