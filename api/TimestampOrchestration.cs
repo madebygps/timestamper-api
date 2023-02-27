@@ -182,13 +182,13 @@ namespace serverlesstimestamper.api
         }
 
 
-        [Function("DurableFunctionsOrchestrationCSharp1_HttpStart")]
+        [Function("TimestampOrchestrationHttpStart")]
         public static async Task<HttpResponseData> HttpStart(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req, string videoUrl,
+            [HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req, string videoUrl,
             [DurableClient] DurableTaskClient client,
             FunctionContext executionContext)
         {
-            ILogger logger = executionContext.GetLogger("DurableFunctionsOrchestrationCSharp1_HttpStart");
+            ILogger logger = executionContext.GetLogger("TimestampOrchestrationHttpStart");
 
             // Function input comes from the request content.
             string instanceId = await client.ScheduleNewOrchestrationInstanceAsync(
