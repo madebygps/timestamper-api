@@ -58,6 +58,6 @@
     public async void GetTimestamps()
     {
         await
-        Http.GetAsync($"https://timestamper.azurewebsites.net/api/DurableFunctionsOrchestrationCSharp1_HttpStart?videoUrl={VideoURL}");
+        Http.GetAsync($"http://localhost:7071/api/DurableFunctionsOrchestrationCSharp1_HttpStart?videoUrl={VideoURL}");
     }
 }
