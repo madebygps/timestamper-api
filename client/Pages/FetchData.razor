@@ -5,95 +5,59 @@
 
 <PageTitle>Timestamp Generator</PageTitle>
 
-<MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
-    <MudGrid>
-        <MudItem xs="12" sm="6" md="4">
-            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;"></MudPaper>
-        </MudItem>
-        <MudItem xs="12" sm="6" md="4">
+<MudContainer>
+    <MudText Typo="Typo.h3" Align="Align.Center" GutterBottom="true">Timestamp Generator</MudText>
+    <MudText Align="Align.Center" Typo="Typo.body1" GutterBottom="true">Create timestamps you can then add
+        to your
+        YouTube video descriptions.</MudText>
+    <MudText Class="pa-4" Align="Align.Center"
+        Color="@(hubConnection.State.ToString() is "Connected" ? MudBlazor.Color.Success : MudBlazor.Color.Error)">
+        @hubConnection.State</MudText>
 
-            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;">
-                <MudText Align="Align.Center" Typo="Typo.h4" GutterBottom="true">Timestamp Generator</MudText>
-                <MudText Align="Align.Center">
-                    <MudText Align="Align.Center"
-                        Color="@(hubConnection.State.ToString() is "Connected" ? MudBlazor.Color.Success : MudBlazor.Color.Error)">
-                        @hubConnection.State</MudText>
-                </MudText>
-            </MudPaper>
-        </MudItem>
-        <MudItem xs="12" sm="12" md="4">
-            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;"></MudPaper>
-        </MudItem>
-        <MudItem xs="12" sm="6">
-            <MudPaper Elevation="0" Class="pa-4" Style="height: 200px;">
-                <MudText Class="mb-8">Provide your YouTube video URL</MudText>
+    <MudGrid>
+
+        <MudItem xs="12">
+
+            <MudPaper Class="d-flex align-center flex-grow-1 gap-4 pa-3" Elevation="0">
 
                 <MudTextField @bind-Value="VideoURL" Label="Video URL" Variant="Variant.Text"></MudTextField>
-
-                <MudButton Tex OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Primary">
-                    <MudText>Click me</MudText>
+                <MudButton OnClick="GetTimestamps" Variant="Variant.Filled" Color="Color.Secondary">
+                    <MudText>Generate</MudText>
                 </MudButton>
             </MudPaper>
+
         </MudItem>
+        <MudItem xs="12">
 
-        <MudItem xs="12" sm="6">
-            <MudPaper Elevation="0" Class="pa-4" Style="height: 100%">
-
-                <MudSimpleTable Hover="true" Dense="true" FixedHeader="true" Style="@(true?"height:300px;":"")">
-                    <thead>
+            <MudSimpleTable Hover="true" Dense="true" FixedHeader="true" Style="@(true?"height:300px;":"")">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var timestamp in timestamps)
+                    {
                         <tr>
-                            <th>Time</th>
-                            <th>Summary</th>
+
+                            <td>@timestamp.time.Split('.')[0]</td>
+                            <td>@timestamp.summary</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var timestamp in timestamps)
-                        {
-                            <tr>
+                    }
+                </tbody>
+            </MudSimpleTable>
 
-                                <td>@timestamp.time.Split('.')[0]</td>
-                                <td>@timestamp.summary</td>
-                            </tr>
-                        }
-                    </tbody>
-                </MudSimpleTable>
-
-
-            </MudPaper>
         </MudItem>
-
     </MudGrid>
 </MudContainer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @code {
     public string VideoURL { get; set; }
-
-    // a function that will call api and return json
     public async void GetTimestamps()
     {
         await
         Http.GetAsync($"https://timestamper.azurewebsites.net/api/DurableFunctionsOrchestrationCSharp1_HttpStart?videoUrl={VideoURL}");
-        // call orchestrator
-        //StateHasChanged();
     }
 }

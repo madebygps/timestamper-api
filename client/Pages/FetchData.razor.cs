@@ -14,31 +14,15 @@ namespace serverlesstimestamper.client
         protected override async Task OnInitializedAsync()
         {
 
-            // Prod
-            //timestamps = await Http.GetFromJsonAsync<Timestamp[]>("https://cryptotickersnetgps.azurewebsites.net/api/GetPricesJson");
             // Local
-            // timestamps = await Http.GetFromJsonAsync<Timestamp[]>("http://localhost:7071/api/TimestamperFunctions?videoUrl={VideoURL}");
-
-            // Prod    
-            hubConnection = new HubConnectionBuilder().WithUrl("https://timestamper.azurewebsites.net/api/").Build();
-            // Local
-            // https://timestamper.azurewebsites.net/runtime/webhooks/durabletask/instances/25cb279e16774af18328b155b84c0ed7?code=-gxsvn015plk0D8ninqwn7VBpkl8wo3RlZLlDb4R7f9RAzFuOeSePw==
-            // hubConnection = new HubConnectionBuilder().WithUrl("http://localhost:7071/api").Build();
-            // http://localhost:7071/api/negotiate
-            //const connection = new signalR.HubConnectionBuilder()
-
+            hubConnection = new HubConnectionBuilder().WithUrl("http://localhost:7071/api").Build();
             hubConnection.On<Timestamp>("newMessage", (message) =>
                 {
-                    //timestamps = timestamp;
-                    // messagesList.Items.Add(newMessage);
-                    //var newMessage = $"{user}: {message}";
-
                     Console.WriteLine("new message:" + message);
                     timestamps.Add(message);
                     StateHasChanged();
                 }
             );
-
             await hubConnection.StartAsync();
         }
 
