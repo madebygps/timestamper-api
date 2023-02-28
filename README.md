@@ -45,7 +45,7 @@
 
 ## How it works
 
-The API is powered by [Azure Durable Functions](). It uses [YouTube Explode]() to get the caption track of the requested video, slices the caption track into segments, and sends that segment to [OpenAI API] for a summary. The summary is then broadcasted to SignalR which the client app is connected to.
+The API is powered by [Azure Durable Functions](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp-inproc). It uses [YouTube Explode](https://github.com/Tyrrrz/YoutubeExplode) to get the caption track of the requested video, slices the caption track into segments, and sends that segment to [OpenAI API](openai.com) for a summary. The summary is then broadcasted to SignalR which the client app is connected to.
 
 ## To do 
 
