@@ -105,9 +105,9 @@ namespace serverlesstimestamper.api
                 Model = Models.TextDavinciV3,
                 Temperature = (float?)0.75,
                 TopP = 1,
-                MaxTokens = 630,
-                FrequencyPenalty = 0,
-                PresencePenalty = 0
+                MaxTokens = text.Length/4,
+                FrequencyPenalty = (float?)0.93,
+                PresencePenalty = (float?)1.03
 
             });
 
