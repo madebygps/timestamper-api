@@ -63,8 +63,7 @@ namespace serverlesstimestamper.api
                 timestamps.Add(newTimestamp);
 
                 logger.LogInformation($"Calling signalr now");
-                //var responseFromSignalR = await client.PostAsync($"http://localhost:7071/api/BroadcastToAll?videoUrl={newTimestamp.time + ": " + result}", new StringContent(result, Encoding.UTF8, "application/json"));
-
+    
                 var responseFromSignalR = await context.CallActivityAsync<HttpResponseMessage>(nameof(BroadcastToClients), newTimestamp);
                 logger.LogInformation($"Response: {responseFromSignalR.StatusCode}");
 
@@ -83,12 +82,6 @@ namespace serverlesstimestamper.api
 
             outputs.Add(json);
 
-
-            // Replace name and input with values relevant for your Durable Functions Activity
-
-            //outputs.Add(await context.CallActivityAsync<string>(nameof(SayHello), "London"));
-
-            // returns ["Hello Tokyo!", "Hello Seattle!", "Hello London!"]
             return outputs;
         }
 
@@ -108,7 +101,7 @@ namespace serverlesstimestamper.api
 
             var completionResult = await openAiService.Completions.CreateCompletion(new CompletionCreateRequest()
             {
-                Prompt = $"(Summarize the following in 10 words: {text} Summary:",
+                Prompt = $"(Tell me the main idea of the following text in 10 words: {text} Main idea:",
                 Model = Models.TextDavinciV3,
                 Temperature = (float?)0.75,
                 TopP = 1,
