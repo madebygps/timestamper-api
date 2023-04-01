@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "serverless-timestamper", "api\serverless-timestamper.csproj", "{4F7B27C7-8CE3-4ECA-B786-5F28E98B1FAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shared", "shared\shared.csproj", "{86D581D3-07A9-4906-A718-4530EE302EFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "client", "client\client.csproj", "{89414DCD-A830-46B2-B901-24ED5C1B3451}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C2EF3D79-299A-4AC9-8F3C-EF166EEA0B1E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{A7136E82-6483-4263-9CC5-D3D2D1775321}"
+	ProjectSection(SolutionItems) = preProject
+		infra\.terraform.lock.hcl = infra\.terraform.lock.hcl
+		infra\main.tf = infra\main.tf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F7B27C7-8CE3-4ECA-B786-5F28E98B1FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7B27C7-8CE3-4ECA-B786-5F28E98B1FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7B27C7-8CE3-4ECA-B786-5F28E98B1FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7B27C7-8CE3-4ECA-B786-5F28E98B1FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D581D3-07A9-4906-A718-4530EE302EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D581D3-07A9-4906-A718-4530EE302EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D581D3-07A9-4906-A718-4530EE302EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D581D3-07A9-4906-A718-4530EE302EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89414DCD-A830-46B2-B901-24ED5C1B3451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89414DCD-A830-46B2-B901-24ED5C1B3451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89414DCD-A830-46B2-B901-24ED5C1B3451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89414DCD-A830-46B2-B901-24ED5C1B3451}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C60B609-E19D-4480-8E9E-45444CE99926}
+	EndGlobalSection
+EndGlobal
